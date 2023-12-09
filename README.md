@@ -1,6 +1,6 @@
 # customer-relationship-manager
 This is a Java Full Stack Spring boot Application used MySQL as Database
-Technologies used: Spring Core, Spring MVC, Hibernate API, JSP pages, JSTL tags, Thymeleaf, Maven, CSS, Database engine used: MySQL, Configuration application (xml).
+Technologies used: Spring Core, Spring MVC, Hibernate API, JSP pages, JSTL tags, Thymeleaf, Maven, HTML, CSS, Bootstrap, Database engine used: MySQL, Configuration application (xml).
 
 A full Web working application with Spring, Hibernate and Maven functions. This full CRUD application is a Customer Relationship Management system that allows to track customers. The app displays a customer list extracted from the database and allows adding, removing, updating, searching, deleting the customers. The customers in the list are basic entities having id, first name, last name, email, company. The database has one Customer table with the fields mentioned earlier. The fields are mapped to the Customer Java entity using Hibernate annotations
 
