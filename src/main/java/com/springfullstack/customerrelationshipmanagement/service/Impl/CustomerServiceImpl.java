@@ -45,10 +45,6 @@ public class CustomerServiceImpl implements CustomerService {
         customerRepository.deleteById(id);
     }
 
-//    @Override
-//    public List<Customer> searchCustomers(String search) {
-//        return customerRepository.findByFirstNameContaining(search);
-//    }
 
     @Override
     public List<Customer> searchCustomers(String search) {
@@ -59,9 +55,6 @@ public class CustomerServiceImpl implements CustomerService {
         searchResults.addAll(customerRepository.findByLastNameContaining(search));
         searchResults.addAll(customerRepository.findByCompanyContaining(search));
         searchResults.addAll(customerRepository.findByEmailContaining(search));
-
-        // If you want to include the search by first name and last name
-        // searchResults.addAll(customerRepository.findByFirstNameAndLastNameContaining(search, search));
 
         return new ArrayList<>(searchResults);
     }

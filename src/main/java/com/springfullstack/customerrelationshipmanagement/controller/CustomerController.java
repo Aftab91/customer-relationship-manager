@@ -74,22 +74,6 @@ public class CustomerController {
         return "redirect:/customers";
     }
 
-    //Search Holder
-//    @GetMapping("/customers/search")
-//    public String listCustomers(@RequestParam(name = "search", required = false) String search,
-//                                Model themodel) {
-//        if (search != null && !search.isEmpty()) {
-//            // If a search term is provided, filter customers based on the search term
-//            List<Customer> searchResults = customerService.searchCustomers(search);
-//            themodel.addAttribute("customers", searchResults);
-//        } else {
-//            // If no search term is provided, get all customers
-//            themodel.addAttribute("customers", customerService.getAllCustomers());
-//        }
-//
-//        return "search_customer";
-//    }
-
     @GetMapping("/customers/search")
     public String listCustomers(@RequestParam(name = "search", required = false) String search,
                                 Model theModel) {
