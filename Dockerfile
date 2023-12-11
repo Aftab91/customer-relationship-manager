@@ -8,7 +8,7 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
 
-COPY --from=build /target/customer-relationship-management-0.0.1-SNAPSHOT.jar
+COPY --from=build /target/customer-relationship-management-0.0.1-SNAPSHOT.jar customer-relationship-management-0.0.1-SNAPSHOT.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","customer-relationship-management-0.0.1-SNAPSHOT.jar"]
 
